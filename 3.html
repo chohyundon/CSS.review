@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 선택자</title>
+    <style>     
+        /*전체 선택자*/
+        *{      
+            color: red;
+        }
+        /*부분 선택자*/
+        p{
+            color: blue;
+        }
+        /*id 선택자*/
+        #title{
+            color:orange
+        }
+        /*class선택자*/
+        .red{
+            color: blueviolet;
+        }
+        /*기본 속성 선택자*/
+        a[href]{
+            color: aquamarine;
+            display: block;
+        }
+        a[target="_blank"]{
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>전체 선택자</h1>
+    <h2>전체 선택자</h2>
+    <h3>전체 선택자</h3>
+
+    <p id="title">이것만</p>
+    <p>선택됩니다</p>
+    <p class="red">보라돌이</p>
+    
+    <a href="#">기본 a 태그</a>
+    <a href="#" target="_blank">기본 a 태그</a>
+</body>
+</html>
