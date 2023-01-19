@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 속성</title>
+    <style>
+        p{
+            font-family: BatangChe, "Times New Roman", serif; 
+            /*font-fmaily => 글꼴 유형
+            serif => 삐침이 있는 글꼴
+            sans-serif 삐침 없고 굵기가 일정한 고딕계열 글꼴
+            monospace 텍스트 폭과 간격이 일정한 글꼴
+            fantasy 화려한 글꼴
+            cursive 손으로 쓴것 같은 필기체 글꼴*/
+            font-size: 14px;
+            font-weight: 900; /*글꼴 굵기로 100이 최소고 900이 최대*/
+            font-style: italic; /*italic은 이탤릭체로 표기하고, oblique는 기울임꼴이다*/
+            font-variant: small-caps; /*텍스트를 크기가 작은 대문자로 변형한다*/
+            color: red;
+            text-align: center; /*left은 왼쪽으로 정렬하고 right은 오른쪽으로 텍스트 정렬, 
+            center은 텍스트를 가운데로 정렬하고, justify은 양쪽으로 정렬한다*/
+            text-decoration: line-through; /*line through은 텍스트 중간을 관통하는 선을 긋고, 
+            overline은 텍스트 위에 선을 긋는다, underline은 텍스트 아래에 선을 긋는다.*/
+            letter-spacing: 15px; /*letter spacing은 텍스트 사이 간격을 조절한다*/
+            line-height: 16px; /*텍스트 한줄의 높이를 지정할 때 사용하고, 숫자, 퍼센트, 크기사용가능*/
+        }
+    </style>
+</head>
+<body>
+    <p>a글꼴 유형a<br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat soluta nam dicta consectetur sed<br> 
+        eos deserunt earum hic quia natus. Qui.
+    </p>
+</body>
+</html>

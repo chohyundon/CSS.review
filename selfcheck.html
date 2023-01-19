@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selfcheck</title>
+    <style>
+        /*1. p 태그 전체 선택하기*/
+        p{
+            color: blue;
+        }
+        
+        /*2. id 값이 title인 태그를 선택합니다.*/
+        #title{
+            color: brown;
+        }
+        
+        /*3. class 값이 box이면서, id값이 title 인 태그 선택*/
+        #title.box{
+            color: cadetblue;
+        }
+        
+        /*4. section태그 하위 모든 div태그 생성*/
+        section div{
+            border:1px solid orange ;
+        }
+        
+        /*5. label태그와 인접한 형제 input태그 선택하기*/
+        label+input{
+            border: 1px solid red;
+        }
+
+        /*6. 링크 대상경로가 네이버인 a태그의 하위에 있는 span태그 모두 선택*/
+        a [href="https://www.naver.com"] span{
+            border: 1px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">제목</h1>
+    
+    <p>p태그 입니다</p>
+    <p>p태그 입니다</p>
+    <p>p태그 입니다</p>
+    
+    <h2 class="box" id="title">box</h2>
+
+    <section>
+        <div>
+            <p>ocassion</p>
+            <p>ocassion1</p>
+            <p>ocassion2</p>
+        </div>
+    </section>
+
+    <label for="id">아이디 입력</label>
+    <input type="text">
+
+    <a href="https://www.naver.com">
+        <span>네이버바로가기</span>
+    </a>
+</body>
+</html>

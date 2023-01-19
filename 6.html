@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS특징</title>
+    <style>
+        h1{
+            font-size: 25px;
+            font-weight: bolder;
+        }
+        
+        p{color: red;}
+        p{color: yellow;}
+        p{color: blue;}
+
+        div{
+            color: blueviolet;
+        }
+        
+        .parent{
+            font-size: 16px;
+        }
+        .child{
+            font-size: 80%; /* 부모 16px 80% => 12.8px*/
+        }
+        .child-to-child{
+            font-size: 80%; /*부모 12.8px의 80% => 10.24px*/
+        }
+
+        .parent{
+            font-size: 16px;
+        }
+        .child{
+            font-size: 2em; /* 부모 16px*2 => 32px*/
+        }
+        .child-to-child{
+            font-size: 2em; /*부모32px*2 => 64px*/
+        }
+        
+        .parent{
+            font-size: 1rem;
+        }
+        .child{
+            font-size: 1rem; /* 부모 16px*1rem => 16px*/
+        }
+        .child-to-child{
+            font-size: 2rem; /*부모16px*2 => 32px*/
+        }
+
+        .parent{
+            font-size: 1vw;  /*기준 뷰포트넓이 =900px 1/100 => 9px*/
+        }
+        .child{
+            font-size: 2vW; /*900px 2/100 => 18px*/
+        }
+        
+        .parent{
+            font-size: 1vw;  /*기준 뷰포트 높이 =400px 1/100 => 4px*/
+        }
+        .child{
+            font-size: 2vW; /*400px 2/100 => 8px*/
+        }
+
+        .box{
+            color: rgb(255,0,0);
+        }
+    </style>
+</head>
+<body>
+    <h1>제목</h1>
+    <!--p태그에서 파란색으로 스타일이 적용된 이유는 단계적 적용 떄문이다
+    
+    또 한 스타일 속성이 우선순위에 따라 스타일이 적용되는데 우선순위는 다음과 같다. 
+    1. 인라인 스타일 ex) style = "color: red"
+    2. 아이디 선택자 ex) #title, #main 
+    3. 가상 클래스 선택자 ex) :hover, :visited :link
+    4. 클래스 선택자 ex) .box , .title
+    5. 가상 요소 선택자 ex) ::before, ::after
+    6. 태그 선택자 div, p
+    7. 전체 선택자 * -->
+
+    <p>어떤 색이 나올까요?</p>
+
+    <!--상속은 div 스타일을 변환했는데  자식이 
+    변한 이유는 상속 때문으로 부모의 요소를 자식이 물려받는다-->
+    <div>
+        <p>inherit</p>
+    </div>
+
+    <!--CSS는 어떤환경이라도 동일한 크기로 보이는 단위를 절대단위 ex)px, 
+    부모요소, 웹 브라우저에 창 크기에 따라 상대적으로 결정되는 단위를 말한다 -->
+    <!--상대단위%-->
+    <h2 class="parent">부모</h2>
+    <h2 class="child">자식</h2>
+    <h2 class="child-to-child">자식의 자식</h2>
+    
+    <!--상대단위 em-->
+    <h2 class="parent">부모</h2>
+    <h2 class="child">자식</h2>
+    <h2 class="child-to-child">자식의 자식</h2>
+
+    <!--상대단위 rem-->
+    <h2 class="parent">부모</h2>
+    <h2 class="child">자식</h2>
+    <h2 class="child-to-child">자식의 자식</h2>
+
+    <!--상대단위 vw-->
+    <h2 class="parent">부모</h2>
+    <h2 class="child">자식</h2>
+
+    <!--상대단위 vh-->
+    <h2 class="parent">부모</h2>
+    <h2 class="child">자식</h2>
+
+    <!--색상 표기-->
+    <h1 class="box">색상</h1>
+</body>
+</html>
